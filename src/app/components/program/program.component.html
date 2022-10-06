@@ -1,0 +1,58 @@
+<app-header></app-header>
+<app-sidebar></app-sidebar>
+<div class="container-fluid">
+    <div class="arcordion-div">
+        <div class="btn-div">
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Add
+                Program</button>
+        </div>
+        <div>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Program Name</th>
+                        <th scope="col">Program Duration</th>
+                        <th style="text-align: right;">Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let program of programs;index as i">
+                        <th scope="row">{{i+1}}</th>
+                        <td>{{program.programName}}</td>
+                        <td><span>{{program.programDuration}} </span><span>Years</span></td>
+                        <td style="text-align: right;"><span><i class="bi bi-pencil-fill"></i></span><span (click)="deleteProgram(program.programId)"><i
+                                    class="bi bi-trash-fill" style="margin-left: 3%;"></i></span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <form>
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Add New Program</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div>
+                        <div><input class="form-control form-control-sm mb-3" type="text" placeholder="Course Name"
+                            [(ngModel)]="programName" name="programName"></div>
+                        <div><input class="form-control form-control-sm" type="number" placeholder="Course Code"
+                            [(ngModel)]="programDuration" name="programDuration"></div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                    <button (click)="createProgram()" class="btn btn-success">Create</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
