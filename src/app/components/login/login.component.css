@@ -1,16 +1,22 @@
-.first-grid{
+.first-grid {
     background-color: #f7f7f7;
     height: 100vh;
 }
 
-.second-grid{
+.second-grid {
     background-color: rgb(9, 86, 135);
     height: 100vh;
 }
 
-.cw{
+.cw {
     color: white !important;
 }
-.btn{
+
+.btn {
     background-color: #D96C0D;
+}
+
+.image-m img {
+    margin-top: 5px;
+    width: 100vh;
 }
