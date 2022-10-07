@@ -1,0 +1,35 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-8 first-grid">
+            <div class="mt-5">
+                <a class="navbar-brand" href="#" style="margin-left:6%;color: white !important;"><img
+                        src="../../../assets/logo.png" alt="" width="60" height="60"></a>
+            </div>
+        </div>
+        <div class="col second-grid">
+            <form>
+                <div class="w-75" style="margin-left: 12%; margin-top: 50%;">
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label cw">Username</label>
+                        <input type="text" [(ngModel)]="username" name="username" class="form-control" id="exampleFormControlInput1" placeholder="Username">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput2" class="form-label cw">password</label>
+                        <input type="password" [(ngModel)]="password" name="password" class="form-control" id="exampleFormControlInput2"
+                            placeholder="Password">
+                    </div>
+
+                    <div style="margin-left: 56%;">
+                        <div>
+                            <p class="cw">Forgotten Password?</p>
+                        </div>
+                        <div>
+                            <button type="button" class="btn btn-success" style="width: 8rem !important;" (click)="login()">Login</button>
+                        </div>
+                    </div>
+
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

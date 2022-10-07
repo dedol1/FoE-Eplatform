@@ -14,6 +14,17 @@ import { DepartmentsComponent } from './components/departments/departments.compo
 import { CoursesComponent } from './components/courses/courses.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
+import { LandingPageComponent } from './components/landing-page/landing-page.component';
+import { LoginComponent } from './components/login/login.component';
+import { StudentSideNavComponent } from './studentcomponents/layouts/student-side-nav/student-side-nav.component';
+import { StudentDashboardComponent } from './studentcomponents/student-dashboard/student-dashboard.component';
+import { StudentAccountsComponent } from './studentcomponents/student-accounts/student-accounts.component';
+import { PersonalInfoComponent } from './studentcomponents/personal-info/personal-info.component';
+import { CourseRegistrationComponent } from './studentcomponents/course-registration/course-registration.component';
+import { StudentResultsComponent } from './studentcomponents/student-results/student-results.component';
+import { LecturerSideNavComponent } from './lecturercomponents/layouts/lecturer-side-nav/lecturer-side-nav.component';
+import { LecturerDashboardComponent } from './lecturercomponents/lecturer-dashboard/lecturer-dashboard.component';
+import { StudentGradesComponent } from './lecturercomponents/student-grades/student-grades.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +38,17 @@ import { FormsModule } from '@angular/forms';
     EmployeesComponent,
     DepartmentsComponent,
     CoursesComponent,
+    LandingPageComponent,
+    LoginComponent,
+    StudentSideNavComponent,
+    StudentDashboardComponent,
+    StudentAccountsComponent,
+    PersonalInfoComponent,
+    CourseRegistrationComponent,
+    StudentResultsComponent,
+    LecturerSideNavComponent,
+    LecturerDashboardComponent,
+    StudentGradesComponent,
   ],
   imports: [
     BrowserModule,
