@@ -56,7 +56,7 @@ export class LoginComponent implements OnInit {
   setStorage() {
     sessionStorage.setItem("email", this.response.email)
     sessionStorage.setItem("username", this.response.username)
-    sessionStorage.setItem("token", this.response.token)
+    sessionStorage.setItem("token", this.response.accessToken)
     sessionStorage.setItem("id", this.response.id)
     sessionStorage.setItem("role", this.response.roles[0])
   }

@@ -12,7 +12,7 @@ import { AccountComponent } from './components/account/account.component';
 import { EmployeesComponent } from './components/employees/employees.component';
 import { DepartmentsComponent } from './components/departments/departments.component';
 import { CoursesComponent } from './components/courses/courses.component';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { LandingPageComponent } from './components/landing-page/landing-page.component';
 import { LoginComponent } from './components/login/login.component';
@@ -25,6 +25,7 @@ import { StudentResultsComponent } from './studentcomponents/student-results/stu
 import { LecturerSideNavComponent } from './lecturercomponents/layouts/lecturer-side-nav/lecturer-side-nav.component';
 import { LecturerDashboardComponent } from './lecturercomponents/lecturer-dashboard/lecturer-dashboard.component';
 import { StudentGradesComponent } from './lecturercomponents/student-grades/student-grades.component';
+import { RequestInterceptorService } from 'src/services/interceptor/request-interceptor.service';
 
 @NgModule({
   declarations: [
@@ -56,7 +57,13 @@ import { StudentGradesComponent } from './lecturercomponents/student-grades/stud
     HttpClientModule,
     FormsModule
   ],
-  providers: [],
+  providers: [
+    {
+      provide: HTTP_INTERCEPTORS,
+      useClass: RequestInterceptorService,
+      multi: true,
+    },
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
