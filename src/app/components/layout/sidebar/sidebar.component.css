@@ -106,5 +106,22 @@ body {
   }
 
  #sidebarMenu a:hover{
-    color: blue;
+    color: #fff;
   }
+
+  .nav-item:hover{
+
+    background-color:#c36105;
+    transition: 300ms ease-in-out;
+    color: white;
+  cursor: pointer;
+    transform: scale(1.1);
+  }
+
+  .nav-item .nav-link{
+    font-size: .875rem
+  }
+  .nav-item .nav-link i{
+    margin-right: 5px;
+  }
+
