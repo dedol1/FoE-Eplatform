@@ -1,3 +1,31 @@
+
+.button-container{
+width:100%;
+display:flex;
+align-items: center;
+flex-direction: column;
+justify-content:center;
+}
+
+
+.fpass-container{
+text-align:center;
+  width: 100%;
+}
+
+.fpass:hover{
+  color:#D96C0D;
+}
+
+
+
+.fpass{
+  text-decoration:none;
+  color:#f7f7f7;
+  text-align:center;
+  font-size:0.8rem;
+
+}
 .first-grid {
     background-color: #f7f7f7;
     height: 100vh;
@@ -14,9 +42,15 @@
 
 .btn {
     background-color: #D96C0D;
+    transition: 300ms ease-in-out;
+    margin-top: 8px;
 }
 
 .image-m img {
     margin-top: 5px;
     width: 100vh;
+}
+
+.btn-login:hover{
+  transform:scale(1.1);
 }

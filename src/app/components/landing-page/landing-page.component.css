@@ -1,3 +1,9 @@
+*{
+
+    text-decoration:none;
+    list-style: none;
+}
+
 .header {
     height: 100vh;
 }
@@ -20,10 +26,24 @@ li a {
     color: #333;
 }
 
+.btn-login{
+   padding:5px;
+   background-color: darkorange;
+   border-radius:5px;
+   text-align: center;
+   font-weight: bold;
+
+}
+
+.btn-login:hover{
+background-color: #095687;
+border:1px solid darkorange;
+}
+
 .big-text {
     font-size: 40px;
     margin: 20px 0;
-    color: greenyellow;
+    color:#095687;
 }
 
 a.btn {
@@ -45,7 +65,7 @@ a.btn-second {
 }
 
 a.btn:hover {
-    background-color: rgb(58, 58, 212);
+    background-color:#095687;
     border: none;
     color: #fff;
     box-shadow: 5px 5px 10px #999;

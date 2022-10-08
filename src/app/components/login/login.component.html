@@ -19,16 +19,16 @@
                         <input type="text" [(ngModel)]="username" name="username" class="form-control" id="exampleFormControlInput1" placeholder="Username">
                     </div>
                     <div class="mb-3">
-                        <label for="exampleFormControlInput2" class="form-label cw">password</label>
+                        <label for="exampleFormControlInput2" class="form-label cw">Password</label>
                         <input type="password" [(ngModel)]="password" name="password" class="form-control" id="exampleFormControlInput2" placeholder="Password">
                     </div>
 
-                    <div style="margin-left: 25%;">
-                        <div>
-                            <p class="cw">Forgot Password?</p>
+                    <div  class="button-container">
+                        <div class="fpass-container">
+                            <a class="fpass" href="#">Forgot Password?</a>
                         </div>
                         <div>
-                            <button type="button" class="btn btn-success" style="width: 8rem !important;" (click)="login()">Login</button>
+                            <button type="button" class="btn btn-success btn-login" style="width: 8rem !important;" (click)="login()">Login</button>
                         </div>
                     </div>
 
